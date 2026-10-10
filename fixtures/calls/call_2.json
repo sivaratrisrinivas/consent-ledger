@@ -1,0 +1,189 @@
+{
+  "id": "call_2",
+  "title": "Daughter signs up her mother",
+  "synthetic": true,
+  "plan_code": "premium_monthly",
+  "member_name": "Lin Chen",
+  "caller_role": "loved_one",
+  "expect": {
+    "gate": 200,
+    "summary": "Family signup detected. 7 phone items plus the 4 family items all present. First charge goes through."
+  },
+  "segments": [
+    {
+      "id": 1,
+      "speaker": "operator",
+      "start": 0.0,
+      "end": 5.6,
+      "text": "Thanks for calling GoGoGrandparent, this is Dana. This call is recorded. How can I help today?"
+    },
+    {
+      "id": 2,
+      "speaker": "caller",
+      "start": 6.0,
+      "end": 12.6,
+      "text": "Hi, I'm Maya Chen. I'm calling to sign up my mother, Lin Chen. She can't use apps anymore."
+    },
+    {
+      "id": 3,
+      "speaker": "operator",
+      "start": 13.0,
+      "end": 26.6,
+      "text": "Of course. GoGo lets your mother book rides and order groceries and meals by phone, with no app. She calls or texts us, we book the ride with a driver service, and we keep an eye on the trip and can update you."
+    },
+    {
+      "id": 4,
+      "speaker": "caller",
+      "start": 27.0,
+      "end": 29.6,
+      "text": "That's exactly what she needs."
+    },
+    {
+      "id": 5,
+      "speaker": "operator",
+      "start": 30.0,
+      "end": 36.6,
+      "text": "The Premium plan is $59.00 per month, billed monthly to the card on the account."
+    },
+    {
+      "id": 6,
+      "speaker": "caller",
+      "start": 37.0,
+      "end": 39.6,
+      "text": "Yes, $59 a month works."
+    },
+    {
+      "id": 7,
+      "speaker": "operator",
+      "start": 40.0,
+      "end": 45.6,
+      "text": "The membership automatically renews each month unless you or your mother cancel."
+    },
+    {
+      "id": 8,
+      "speaker": "caller",
+      "start": 46.0,
+      "end": 48.6,
+      "text": "Yes, I understand."
+    },
+    {
+      "id": 9,
+      "speaker": "operator",
+      "start": 49.0,
+      "end": 56.6,
+      "text": "Either of you can cancel any time with no fee. To cancel, call us, email us, or cancel online in the account settings."
+    },
+    {
+      "id": 10,
+      "speaker": "caller",
+      "start": 57.0,
+      "end": 58.6,
+      "text": "Okay."
+    },
+    {
+      "id": 11,
+      "speaker": "operator",
+      "start": 59.0,
+      "end": 66.6,
+      "text": "Our toll-free number is 1-855-464-6872 and our email is support@gogograndparent.com, for cancelling or questions."
+    },
+    {
+      "id": 12,
+      "speaker": "caller",
+      "start": 67.0,
+      "end": 69.6,
+      "text": "Got it, I have both."
+    },
+    {
+      "id": 13,
+      "speaker": "operator",
+      "start": 70.0,
+      "end": 77.6,
+      "text": "Our Terms include an arbitration agreement and a class action waiver, so disputes go to individual arbitration, not court."
+    },
+    {
+      "id": 14,
+      "speaker": "caller",
+      "start": 78.0,
+      "end": 80.6,
+      "text": "Understood."
+    },
+    {
+      "id": 15,
+      "speaker": "operator",
+      "start": 81.0,
+      "end": 88.6,
+      "text": "Because you're signing up on your mother's behalf, you are also responsible for all fees and charges on the account, jointly with her."
+    },
+    {
+      "id": 16,
+      "speaker": "caller",
+      "start": 89.0,
+      "end": 92.6,
+      "text": "Yes, I understand I'm responsible for the charges too."
+    },
+    {
+      "id": 17,
+      "speaker": "operator",
+      "start": 93.0,
+      "end": 98.6,
+      "text": "Can you confirm you have the authority to approve recurring charges on your mother's behalf?"
+    },
+    {
+      "id": 18,
+      "speaker": "caller",
+      "start": 99.0,
+      "end": 105.6,
+      "text": "Yes. I have power of attorney for her, and I'm authorized to approve the recurring charges."
+    },
+    {
+      "id": 19,
+      "speaker": "operator",
+      "start": 106.0,
+      "end": 111.6,
+      "text": "The arbitration agreement and class action waiver bind both you and your mother."
+    },
+    {
+      "id": 20,
+      "speaker": "caller",
+      "start": 112.0,
+      "end": 114.6,
+      "text": "Yes, that's fine."
+    },
+    {
+      "id": 21,
+      "speaker": "operator",
+      "start": 115.0,
+      "end": 122.6,
+      "text": "And your mother has the right to receive information about the service directly from us at any time, not only through you."
+    },
+    {
+      "id": 22,
+      "speaker": "caller",
+      "start": 123.0,
+      "end": 125.6,
+      "text": "Good, she'd like that."
+    },
+    {
+      "id": 23,
+      "speaker": "operator",
+      "start": 126.0,
+      "end": 134.6,
+      "text": "Maya, do you authorize GoGoGrandparent to charge your Mastercard ending in 2290 $59.00 today and every month until it's cancelled?"
+    },
+    {
+      "id": 24,
+      "speaker": "caller",
+      "start": 135.0,
+      "end": 137.6,
+      "text": "Yes, I authorize it."
+    },
+    {
+      "id": 25,
+      "speaker": "operator",
+      "start": 138.0,
+      "end": 143.0,
+      "text": "Thank you. We'll send the written confirmation to your email before the first charge."
+    }
+  ]
+}

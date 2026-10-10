@@ -1,0 +1,48 @@
+{
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "findings": [
+    {
+      "id": "P1",
+      "status": "present",
+      "quote": "GoGo lets you book rides and order groceries and meals by phone, with no smartphone app.",
+      "segment_ids": [
+        3
+      ]
+    },
+    {
+      "id": "P3",
+      "status": "present",
+      "quote": "Your membership automatically renews every month unless you cancel.",
+      "segment_ids": [
+        9
+      ]
+    },
+    {
+      "id": "P4",
+      "status": "present",
+      "quote": "You can cancel any time and there is no cancellation fee.",
+      "segment_ids": [
+        11
+      ]
+    },
+    {
+      "id": "P6",
+      "status": "present",
+      "quote": "Our Terms include an arbitration agreement and a class action waiver, so disputes go to individual arbitration instead of court.",
+      "segment_ids": [
+        15
+      ]
+    },
+    {
+      "id": "A1",
+      "status": "present",
+      "quote": "Ruth, do you authorize GoGoGrandparent to charge your Visa ending in 4417 $34.00 today and every month until you cancel?",
+      "segment_ids": [
+        17
+      ]
+    }
+  ],
+  "call": "call_1",
+  "created": "2026-10-10T03:07:33.280Z"
+}

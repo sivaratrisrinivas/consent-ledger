@@ -1,0 +1,126 @@
+{
+  "id": "call_6",
+  "title": "Annual plan, renewal said in plain words",
+  "synthetic": true,
+  "plan_code": "total_care_annual",
+  "member_name": "Dolores Reyes",
+  "caller_role": "self",
+  "expect": {
+    "gate": 200,
+    "summary": "Renewal is paraphrased, not the stock phrase. The model step finds it and the quote is verified word for word. Passes. In rules-only mode this item comes back missing."
+  },
+  "segments": [
+    {
+      "id": 1,
+      "speaker": "operator",
+      "start": 0.0,
+      "end": 5.6,
+      "text": "Thanks for calling GoGoGrandparent, this is Dana. This call is recorded. How can I help today?"
+    },
+    {
+      "id": 2,
+      "speaker": "caller",
+      "start": 6.0,
+      "end": 10.6,
+      "text": "Dolores Reyes. I'd like the yearly option for myself."
+    },
+    {
+      "id": 3,
+      "speaker": "operator",
+      "start": 11.0,
+      "end": 23.6,
+      "text": "Of course, Dolores. GoGo lets you book rides and order groceries and meals by phone, with no smartphone app. You call or text us, we book the ride with a driver service, and we keep an eye on the trip."
+    },
+    {
+      "id": 4,
+      "speaker": "caller",
+      "start": 24.0,
+      "end": 27.6,
+      "text": "Yes, that's what my friend told me."
+    },
+    {
+      "id": 5,
+      "speaker": "operator",
+      "start": 28.0,
+      "end": 34.6,
+      "text": "Total Care on the annual option is $480.00 per year, billed once a year."
+    },
+    {
+      "id": 6,
+      "speaker": "caller",
+      "start": 35.0,
+      "end": 38.6,
+      "text": "Yes, $480 a year is fine."
+    },
+    {
+      "id": 7,
+      "speaker": "operator",
+      "start": 39.0,
+      "end": 49.6,
+      "text": "When the year is up, your membership carries on into the next year by itself at the same price, and we bill the card again each year until you tell us to stop."
+    },
+    {
+      "id": 8,
+      "speaker": "caller",
+      "start": 50.0,
+      "end": 54.6,
+      "text": "Yes, that's clear, it keeps going each year till I stop it."
+    },
+    {
+      "id": 9,
+      "speaker": "operator",
+      "start": 55.0,
+      "end": 62.6,
+      "text": "You can cancel any time with no fee. To cancel, call us, email us, or cancel online in your account settings."
+    },
+    {
+      "id": 10,
+      "speaker": "caller",
+      "start": 63.0,
+      "end": 64.6,
+      "text": "Good."
+    },
+    {
+      "id": 11,
+      "speaker": "operator",
+      "start": 65.0,
+      "end": 73.6,
+      "text": "Our toll-free number is 1-855-464-6872 and our email is support@gogograndparent.com, for cancelling or any questions."
+    },
+    {
+      "id": 12,
+      "speaker": "caller",
+      "start": 74.0,
+      "end": 75.6,
+      "text": "I have it."
+    },
+    {
+      "id": 13,
+      "speaker": "operator",
+      "start": 76.0,
+      "end": 84.6,
+      "text": "Our Terms include an arbitration agreement and a class action waiver, so disputes go to individual arbitration instead of court."
+    },
+    {
+      "id": 14,
+      "speaker": "caller",
+      "start": 85.0,
+      "end": 87.6,
+      "text": "Understood."
+    },
+    {
+      "id": 15,
+      "speaker": "operator",
+      "start": 88.0,
+      "end": 96.6,
+      "text": "Dolores, do you authorize GoGoGrandparent to charge your Visa ending in 6624 $480.00 today and again each year until you cancel?"
+    },
+    {
+      "id": 16,
+      "speaker": "caller",
+      "start": 97.0,
+      "end": 98.6,
+      "text": "Yes, I authorize that."
+    }
+  ]
+}

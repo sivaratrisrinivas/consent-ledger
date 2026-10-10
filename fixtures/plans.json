@@ -1,0 +1,9 @@
+{
+  "_note": "SYNTHETIC prices for the demo. Plan names follow GoGo's public plan names; the prices are made up and are not GoGo's prices.",
+  "plans": [
+    { "code": "basic_monthly", "name": "Basic (synthetic price)", "price_cents": 1400, "frequency": "month" },
+    { "code": "value_monthly", "name": "Value (synthetic price)", "price_cents": 3400, "frequency": "month" },
+    { "code": "premium_monthly", "name": "Premium (synthetic price)", "price_cents": 5900, "frequency": "month" },
+    { "code": "total_care_annual", "name": "Total Care, annual (synthetic price)", "price_cents": 48000, "frequency": "year" }
+  ]
+}

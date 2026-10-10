@@ -1,0 +1,37 @@
+{
+  "name": "consent-ledger",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Checks a phone-registration call transcript against the disclosures in GoGoGrandparent's public Terms and holds the first charge until all are present.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/server.js",
+    "dev": "tsx src/server.ts",
+    "demo": "tsx scripts/demo.ts",
+    "gen-cache": "tsx scripts/gen-cache.ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/static": "^10.1.6",
+    "better-sqlite3": "^11.10.0",
+    "fastify": "^5.12.5",
+    "graphql": "^17.0.2",
+    "mercurius": "^16.11.0",
+    "mysql2": "^3.24.5",
+    "yaml": "^2.9.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^20.19.43",
+    "mysql-memory-server": "^1.17.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^3.2.7"
+  }
+}

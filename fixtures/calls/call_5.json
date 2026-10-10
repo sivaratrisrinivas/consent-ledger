@@ -1,0 +1,126 @@
+{
+  "id": "call_5",
+  "title": "Only \"uh-huh\" to auto-renewal",
+  "synthetic": true,
+  "plan_code": "value_monthly",
+  "member_name": "Harold Kim",
+  "caller_role": "self",
+  "expect": {
+    "gate": 409,
+    "summary": "Auto-renewal is said but the only reply is uh-huh. Item marked unclear, first charge held."
+  },
+  "segments": [
+    {
+      "id": 1,
+      "speaker": "operator",
+      "start": 0.0,
+      "end": 5.6,
+      "text": "Thanks for calling GoGoGrandparent, this is Dana. This call is recorded. How can I help today?"
+    },
+    {
+      "id": 2,
+      "speaker": "caller",
+      "start": 6.0,
+      "end": 9.6,
+      "text": "Harold Kim. I want to sign up."
+    },
+    {
+      "id": 3,
+      "speaker": "operator",
+      "start": 10.0,
+      "end": 22.6,
+      "text": "Glad to help, Harold. GoGo lets you book rides and order groceries and meals by phone, with no smartphone app. You call or text us, we book the ride with a driver service, and we keep an eye on the trip."
+    },
+    {
+      "id": 4,
+      "speaker": "caller",
+      "start": 23.0,
+      "end": 24.6,
+      "text": "Fine."
+    },
+    {
+      "id": 5,
+      "speaker": "operator",
+      "start": 25.0,
+      "end": 30.6,
+      "text": "The Value plan is $34.00 per month, billed monthly."
+    },
+    {
+      "id": 6,
+      "speaker": "caller",
+      "start": 31.0,
+      "end": 34.6,
+      "text": "Yes, thirty-four a month, okay."
+    },
+    {
+      "id": 7,
+      "speaker": "operator",
+      "start": 35.0,
+      "end": 39.6,
+      "text": "And this renews automatically each month unless you cancel."
+    },
+    {
+      "id": 8,
+      "speaker": "caller",
+      "start": 40.0,
+      "end": 41.6,
+      "text": "Uh-huh."
+    },
+    {
+      "id": 9,
+      "speaker": "operator",
+      "start": 42.0,
+      "end": 49.6,
+      "text": "You can cancel any time with no fee. To cancel, call us, email us, or cancel online in your account settings."
+    },
+    {
+      "id": 10,
+      "speaker": "caller",
+      "start": 50.0,
+      "end": 51.6,
+      "text": "Mm-hmm."
+    },
+    {
+      "id": 11,
+      "speaker": "operator",
+      "start": 52.0,
+      "end": 60.6,
+      "text": "Our toll-free number is 1-855-464-6872 and our email is support@gogograndparent.com, for cancelling or any questions."
+    },
+    {
+      "id": 12,
+      "speaker": "caller",
+      "start": 61.0,
+      "end": 62.6,
+      "text": "Okay."
+    },
+    {
+      "id": 13,
+      "speaker": "operator",
+      "start": 63.0,
+      "end": 71.6,
+      "text": "Our Terms include an arbitration agreement and a class action waiver, so disputes go to individual arbitration instead of court."
+    },
+    {
+      "id": 14,
+      "speaker": "caller",
+      "start": 72.0,
+      "end": 73.6,
+      "text": "Yeah."
+    },
+    {
+      "id": 15,
+      "speaker": "operator",
+      "start": 74.0,
+      "end": 82.6,
+      "text": "Harold, do you authorize GoGoGrandparent to charge your Visa ending in 3391 $34.00 today and every month until you cancel?"
+    },
+    {
+      "id": 16,
+      "speaker": "caller",
+      "start": 83.0,
+      "end": 84.9,
+      "text": "Yes, go ahead and charge it."
+    }
+  ]
+}

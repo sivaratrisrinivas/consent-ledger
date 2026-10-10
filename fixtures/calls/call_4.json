@@ -1,0 +1,119 @@
+{
+  "id": "call_4",
+  "title": "Toll-free number never said",
+  "synthetic": true,
+  "plan_code": "basic_monthly",
+  "member_name": "Gloria Pratt",
+  "caller_role": "self",
+  "expect": {
+    "gate": 409,
+    "summary": "Email is given but the toll-free number is never said. Contact item missing, first charge held until a supervisor overrides."
+  },
+  "segments": [
+    {
+      "id": 1,
+      "speaker": "operator",
+      "start": 0.0,
+      "end": 4.6,
+      "text": "Thanks for calling GoGoGrandparent, this is Dana. This call is recorded. How can I help today?"
+    },
+    {
+      "id": 2,
+      "speaker": "caller",
+      "start": 5.0,
+      "end": 11.6,
+      "text": "I saw your ad in the senior center newsletter. I'm Gloria Pratt and I want to join."
+    },
+    {
+      "id": 3,
+      "speaker": "operator",
+      "start": 12.0,
+      "end": 24.6,
+      "text": "Wonderful, Gloria. GoGo lets you book rides and order groceries and meals by phone, with no smartphone app. You call or text us, we book the ride with a driver service, and we keep an eye on the trip."
+    },
+    {
+      "id": 4,
+      "speaker": "caller",
+      "start": 25.0,
+      "end": 27.6,
+      "text": "That's what I need."
+    },
+    {
+      "id": 5,
+      "speaker": "operator",
+      "start": 28.0,
+      "end": 33.6,
+      "text": "The Basic plan is $14.00 per month, billed monthly."
+    },
+    {
+      "id": 6,
+      "speaker": "caller",
+      "start": 34.0,
+      "end": 37.6,
+      "text": "Yes, $14 a month is fine."
+    },
+    {
+      "id": 7,
+      "speaker": "operator",
+      "start": 38.0,
+      "end": 42.6,
+      "text": "Your membership automatically renews every month unless you cancel."
+    },
+    {
+      "id": 8,
+      "speaker": "caller",
+      "start": 43.0,
+      "end": 45.6,
+      "text": "Yes, I understand."
+    },
+    {
+      "id": 9,
+      "speaker": "operator",
+      "start": 46.0,
+      "end": 55.6,
+      "text": "You can cancel any time with no fee. If you want to cancel, email us at support@gogograndparent.com or cancel online in your account settings."
+    },
+    {
+      "id": 10,
+      "speaker": "caller",
+      "start": 56.0,
+      "end": 59.6,
+      "text": "Okay, email or online."
+    },
+    {
+      "id": 11,
+      "speaker": "operator",
+      "start": 60.0,
+      "end": 68.6,
+      "text": "Our Terms include an arbitration agreement and a class action waiver, so disputes go to individual arbitration instead of court."
+    },
+    {
+      "id": 12,
+      "speaker": "caller",
+      "start": 69.0,
+      "end": 71.6,
+      "text": "Understood."
+    },
+    {
+      "id": 13,
+      "speaker": "operator",
+      "start": 72.0,
+      "end": 80.6,
+      "text": "Gloria, do you authorize GoGoGrandparent to charge your debit card ending in 5120 $14.00 today and every month until you cancel?"
+    },
+    {
+      "id": 14,
+      "speaker": "caller",
+      "start": 81.0,
+      "end": 83.6,
+      "text": "Yes, I authorize that."
+    },
+    {
+      "id": 15,
+      "speaker": "operator",
+      "start": 84.0,
+      "end": 89.0,
+      "text": "Thank you, Gloria. Your written confirmation will come by mail before the first charge."
+    }
+  ]
+}

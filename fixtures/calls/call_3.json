@@ -1,0 +1,196 @@
+{
+  "id": "call_3",
+  "title": "Fee said on the call does not match the plan",
+  "synthetic": true,
+  "plan_code": "value_monthly",
+  "member_name": "Walter Briggs",
+  "caller_role": "self",
+  "expect": {
+    "gate": 409,
+    "summary": "Operator says about twenty a month; the plan record is $34.00 per month. Fee item is a mismatch, first charge held."
+  },
+  "segments": [
+    {
+      "id": 1,
+      "speaker": "operator",
+      "start": 0.0,
+      "end": 5.6,
+      "text": "Thanks for calling GoGoGrandparent, this is Dana. This call is recorded. How can I help today?"
+    },
+    {
+      "id": 2,
+      "speaker": "caller",
+      "start": 6.0,
+      "end": 11.6,
+      "text": "My neighbor uses you. I want to sign up for myself. Walter Briggs."
+    },
+    {
+      "id": 3,
+      "speaker": "operator",
+      "start": 12.0,
+      "end": 24.6,
+      "text": "Welcome, Walter. GoGo lets you book rides and order groceries and meals by phone, with no smartphone app. You call or text us, we book the ride with a driver service, and we keep an eye on the trip."
+    },
+    {
+      "id": 4,
+      "speaker": "caller",
+      "start": 25.0,
+      "end": 27.6,
+      "text": "Good. I don't do apps."
+    },
+    {
+      "id": 5,
+      "speaker": "operator",
+      "start": 28.0,
+      "end": 30.6,
+      "text": "Let me get your address for pickups."
+    },
+    {
+      "id": 6,
+      "speaker": "caller",
+      "start": 31.0,
+      "end": 35.6,
+      "text": "1180 Orchard Lane, apartment 3."
+    },
+    {
+      "id": 7,
+      "speaker": "operator",
+      "start": 36.0,
+      "end": 38.6,
+      "text": "And an emergency contact?"
+    },
+    {
+      "id": 8,
+      "speaker": "caller",
+      "start": 39.0,
+      "end": 43.6,
+      "text": "My son, Peter. I'll give you his number."
+    },
+    {
+      "id": 9,
+      "speaker": "operator",
+      "start": 44.0,
+      "end": 48.6,
+      "text": "Thank you. And what kind of trips will you take most?"
+    },
+    {
+      "id": 10,
+      "speaker": "caller",
+      "start": 49.0,
+      "end": 57.6,
+      "text": "Doctor visits mostly. The clinic on Fifth, and the pharmacy. Sometimes church on Sundays."
+    },
+    {
+      "id": 11,
+      "speaker": "operator",
+      "start": 58.0,
+      "end": 63.6,
+      "text": "We can save those as favorite places so you can just press a number."
+    },
+    {
+      "id": 12,
+      "speaker": "caller",
+      "start": 64.0,
+      "end": 67.6,
+      "text": "That would help a lot."
+    },
+    {
+      "id": 13,
+      "speaker": "operator",
+      "start": 68.0,
+      "end": 97.6,
+      "text": "I've saved the clinic, the pharmacy and the church. Now, a few things about the membership."
+    },
+    {
+      "id": 14,
+      "speaker": "caller",
+      "start": 98.0,
+      "end": 101.6,
+      "text": "Go ahead."
+    },
+    {
+      "id": 15,
+      "speaker": "operator",
+      "start": 102.0,
+      "end": 107.6,
+      "text": "So the Value plan is about twenty a month, billed monthly."
+    },
+    {
+      "id": 16,
+      "speaker": "caller",
+      "start": 108.0,
+      "end": 110.6,
+      "text": "Okay, twenty is fine."
+    },
+    {
+      "id": 17,
+      "speaker": "operator",
+      "start": 111.0,
+      "end": 115.6,
+      "text": "Your membership automatically renews every month unless you cancel."
+    },
+    {
+      "id": 18,
+      "speaker": "caller",
+      "start": 116.0,
+      "end": 118.6,
+      "text": "Yes, I understand."
+    },
+    {
+      "id": 19,
+      "speaker": "operator",
+      "start": 119.0,
+      "end": 126.6,
+      "text": "You can cancel any time with no fee. To cancel, call us, email us, or cancel online in your account settings."
+    },
+    {
+      "id": 20,
+      "speaker": "caller",
+      "start": 127.0,
+      "end": 128.6,
+      "text": "All right."
+    },
+    {
+      "id": 21,
+      "speaker": "operator",
+      "start": 129.0,
+      "end": 137.6,
+      "text": "Our toll-free number is 1-855-464-6872 and our email is support@gogograndparent.com, for cancelling or any questions."
+    },
+    {
+      "id": 22,
+      "speaker": "caller",
+      "start": 138.0,
+      "end": 139.6,
+      "text": "Got it."
+    },
+    {
+      "id": 23,
+      "speaker": "operator",
+      "start": 140.0,
+      "end": 148.6,
+      "text": "Our Terms include an arbitration agreement and a class action waiver, so disputes go to individual arbitration instead of court."
+    },
+    {
+      "id": 24,
+      "speaker": "caller",
+      "start": 149.0,
+      "end": 151.6,
+      "text": "Understood."
+    },
+    {
+      "id": 25,
+      "speaker": "operator",
+      "start": 152.0,
+      "end": 160.6,
+      "text": "Walter, do you authorize GoGoGrandparent to charge your Visa ending in 8803 for the Value plan today and every month until you cancel?"
+    },
+    {
+      "id": 26,
+      "speaker": "caller",
+      "start": 161.0,
+      "end": 162.6,
+      "text": "Yes, I authorize it."
+    }
+  ]
+}

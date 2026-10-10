@@ -1,0 +1,92 @@
+# Built from GoGoGrandparent's public Terms of Service, effective Sep 21, 2026.
+# Source: https://www.gogograndparent.com/terms (checked Oct 10, 2026).
+# Labels are short paraphrases; "terms_text" is the list item as printed in the Terms.
+# This is a checklist, not legal advice.
+version: 2026-09-21
+source:
+  url: https://www.gogograndparent.com/terms
+  effective: "2026-09-21"
+  checked: "2026-10-10"
+contact:
+  toll_free: "1 (855) 464-6872"   # printed in the Terms
+  email: "support@gogograndparent.com"   # printed in the Terms
+items:
+  - id: P1
+    key: service_description
+    group: phone
+    clause: "Phone Registration, item (i)"
+    terms_text: "a description of the Services"
+    label: "What the service is"
+    requires_ack: false
+  - id: P2
+    key: fee_and_frequency
+    group: phone
+    clause: "Phone Registration, item (ii)"
+    terms_text: "the subscription fee and billing frequency"
+    label: "Fee and how often it is billed (must match the plan record)"
+    requires_ack: true
+    check: plan_match
+  - id: P3
+    key: auto_renewal
+    group: phone
+    clause: "Phone Registration, item (iii)"
+    terms_text: "the automatic renewal terms, including that your subscription will automatically renew unless you cancel"
+    label: "It renews on its own unless you cancel"
+    requires_ack: true
+  - id: P4
+    key: cancellation
+    group: phone
+    clause: "Phone Registration, item (iv)"
+    terms_text: "the cancellation policy and how to cancel"
+    label: "Cancellation policy and how to cancel"
+    requires_ack: false
+  - id: P5
+    key: contact_channels
+    group: phone
+    clause: "Phone Registration, item (v)"
+    terms_text: "the toll-free telephone number and email address for cancellation and customer inquiries"
+    label: "Toll-free number and email for cancelling and questions"
+    requires_ack: false
+    check: contact_match
+  - id: P6
+    key: arbitration
+    group: phone
+    clause: "Phone Registration, item (vi)"
+    terms_text: "the arbitration agreement and class action waiver"
+    label: "Arbitration agreement and class action waiver"
+    requires_ack: false
+  - id: A1
+    key: oral_authorization
+    group: phone
+    clause: "Phone Registration, express oral authorization"
+    terms_text: "You will be asked to provide express oral authorization to be charged for the services"
+    label: "Caller gives a clear yes to be charged"
+    requires_ack: true
+  - id: F1
+    key: rep_liability
+    group: family
+    clause: "Section 4.2(h) Verbal Acknowledgment, (i)"
+    terms_text: "the Authorized Representative's responsibilities and joint and several liability for all fees and charges"
+    label: "Family member is also responsible for all fees"
+    requires_ack: true
+  - id: F2
+    key: rep_authority
+    group: family
+    clause: "Section 4.2(h) Verbal Acknowledgment, (ii)"
+    terms_text: "the Authorized Representative's authority to authorize recurring charges on behalf of the Designated User"
+    label: "Family member has authority to approve recurring charges"
+    requires_ack: true
+  - id: F3
+    key: arbitration_binds_both
+    group: family
+    clause: "Section 4.2(h) Verbal Acknowledgment, (iii)"
+    terms_text: "that the arbitration agreement and class action waiver will bind both the Authorized Representative and the Designated User"
+    label: "Arbitration binds both the family member and the rider"
+    requires_ack: false
+  - id: F4
+    key: rider_rights
+    group: family
+    clause: "Section 4.2(h) Verbal Acknowledgment, (iv)"
+    terms_text: "the Designated User's right to receive information about the Services directly"
+    label: "Rider can get information directly"
+    requires_ack: false

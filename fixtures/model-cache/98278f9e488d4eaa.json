@@ -1,0 +1,78 @@
+{
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "findings": [
+    {
+      "id": "P1",
+      "status": "present",
+      "quote": "GoGo lets your mother book rides and order groceries and meals by phone, with no app.",
+      "segment_ids": [
+        3
+      ]
+    },
+    {
+      "id": "P3",
+      "status": "present",
+      "quote": "The membership automatically renews each month unless you or your mother cancel.",
+      "segment_ids": [
+        7
+      ]
+    },
+    {
+      "id": "P4",
+      "status": "present",
+      "quote": "Either of you can cancel any time with no fee. To cancel, call us, email us, or cancel online in the account settings.",
+      "segment_ids": [
+        9
+      ]
+    },
+    {
+      "id": "P6",
+      "status": "present",
+      "quote": "Our Terms include an arbitration agreement and a class action waiver, so disputes go to individual arbitration, not court.",
+      "segment_ids": [
+        13
+      ]
+    },
+    {
+      "id": "A1",
+      "status": "present",
+      "quote": "Maya, do you authorize GoGoGrandparent to charge your Mastercard ending in 2290 $59.00 today and every month until it's cancelled?",
+      "segment_ids": [
+        23
+      ]
+    },
+    {
+      "id": "F1",
+      "status": "present",
+      "quote": "Because you're signing up on your mother's behalf, you are also responsible for all fees and charges on the account, jointly with her.",
+      "segment_ids": [
+        15
+      ]
+    },
+    {
+      "id": "F2",
+      "status": "missing",
+      "quote": null,
+      "segment_ids": []
+    },
+    {
+      "id": "F3",
+      "status": "present",
+      "quote": "The arbitration agreement and class action waiver bind both you and your mother.",
+      "segment_ids": [
+        19
+      ]
+    },
+    {
+      "id": "F4",
+      "status": "present",
+      "quote": "And your mother has the right to receive information about the service directly from us at any time, not only through you.",
+      "segment_ids": [
+        21
+      ]
+    }
+  ],
+  "call": "call_2",
+  "created": "2026-10-10T03:07:37.389Z"
+}
