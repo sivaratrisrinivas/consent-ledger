@@ -64,7 +64,12 @@ h3 { margin: 0 0 8px; font-size: 14px; text-transform: uppercase; letter-spacing
 #modal table { border-collapse: collapse; width: 100%; font-size: 13px; }
 #modal td, #modal th { border-bottom: 1px solid #e5e7eb; padding: 5px 6px; text-align: left; vertical-align: top; }
 #modal .tt { font-style: italic; color: #374151; }
-#caption { position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%); background: rgba(10,15,30,.92); color: #fff; font-size: 24px; font-weight: 600; padding: 12px 22px; border-radius: 10px; max-width: 1100px; text-align: center; z-index: 20; }
+#caption { position: fixed; left: 0; right: 0; top: 0; min-height: 52px; display: flex; align-items: center; justify-content: center; background: #0b1226; color: #fff; font-size: 21px; font-weight: 600; padding: 6px 24px; text-align: center; z-index: 20; border-bottom: 3px solid #f0c75e; }
 #caption[hidden] { display: none; }
 #result .miss { margin-top: 4px; font-size: 13px; }
 #result .miss span { color: #a40e26; font-weight: 600; }
+#endcard { position: fixed; inset: 0; background: #14213d; color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 30; text-align: center; }
+#endcard[hidden] { display: none; }
+#endcard h1 { font-size: 46px; margin: 0 0 18px; }
+#endcard p { font-size: 24px; margin: 6px 0; color: #dbe3f4; }
+#endcard .s { font-size: 18px; color: #9fb0d3; margin-top: 22px; }

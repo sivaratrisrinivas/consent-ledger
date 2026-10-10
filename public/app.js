@@ -9,6 +9,7 @@ const api = async (method, url, body) => {
   return { status: r.status, body: ct.includes("json") ? await r.json() : await r.text() };
 };
 let state = { calls: [], current: null, checklist: null };
+const VIDEO = new URLSearchParams(location.search).has("video");
 const STATUS = { present: "FOUND", missing: "MISSING", unclear: "UNCLEAR", mismatch: "MISMATCH" };
 
 async function loadCalls() {
@@ -89,19 +90,21 @@ async function override(sup, reason) {
 
 async function showEvidence() {
   const r = await api("GET", `/calls/${state.current.id}/evidence-pack`);
-  openModal(`<h3>GET /calls/${state.current.id}/evidence-pack (markdown)</h3><pre>${esc(r.body)}</pre>`);
+  const body = VIDEO ? r.body.replace(/ \(https?:[^)]*\)/g, "") : r.body;
+  openModal(`<h3>GET /calls/${state.current.id}/evidence-pack (markdown)</h3><pre>${esc(body)}</pre>`);
 }
 
 async function showChecklist() {
   const c = state.checklist ?? (state.checklist = (await api("GET", "/checklist")).body);
   openModal(`<h3>Checklist from the public Terms of Service, effective ${c.source.effective}</h3>
-    <p class="fine">Source: <a href="${c.source.url}" target="_blank">${c.source.url}</a> (checked ${c.source.checked}). Toll-free number and email as printed there: ${esc(c.contact.toll_free)}, ${esc(c.contact.email)}.</p>
+    <p class="fine">Source: ${VIDEO ? "GoGoGrandparent's public Terms of Service page" : `<a href="${c.source.url}" target="_blank">${c.source.url}</a>`} (checked ${c.source.checked}). Toll-free number and email as printed there: ${esc(c.contact.toll_free)}, ${esc(c.contact.email)}.</p>
     <table><tr><th>ID</th><th>Clause</th><th>As printed in the Terms</th><th>Needs a clear yes</th></tr>
     ${c.items.map((i) => `<tr data-group="${i.group}"><td>${i.id}</td><td>${esc(i.clause)}</td><td class="tt">"${esc(i.terms_text)}"</td><td>${i.requires_ack ? "yes" : ""}</td></tr>`).join("")}</table>`);
 }
 
 function openModal(html) { $("#modal-body").innerHTML = html; $("#modal").hidden = false; $("#modal .box").scrollTop = 0; }
 function closeModal() { $("#modal").hidden = true; }
+function endCard(html) { const e = $("#endcard"); if (!html) { e.hidden = true; return; } e.innerHTML = html; e.hidden = false; }
 function setCaption(t) { const c = $("#caption"); if (!t) { c.hidden = true; return; } c.textContent = t; c.hidden = false; }
 
 $("#btn-charge").onclick = charge;
@@ -111,7 +114,7 @@ $("#modal-close").onclick = closeModal;
 $("#modal").onclick = (e) => { if (e.target.id === "modal") closeModal(); };
 $("#override-form").onsubmit = (e) => { e.preventDefault(); override(); };
 
-window.cl = { select, charge, override, showEvidence, showChecklist, closeModal, setCaption, focusSeg, reset: () => api("POST", "/demo/reset") };
+window.cl = { endCard, select, charge, override, showEvidence, showChecklist, closeModal, setCaption, focusSeg, reset: () => api("POST", "/demo/reset") };
 (async () => {
   await loadCalls();
   const want = new URLSearchParams(location.search).get("call");
