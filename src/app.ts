@@ -23,7 +23,8 @@ export async function buildApp(opts: AppOptions = {}): Promise<{ app: FastifyIns
   const app = Fastify({ logger: opts.logger ?? false, bodyLimit: 1_000_000 });
   app.setErrorHandler((err: any, _req, reply) => {
     if (err instanceof HttpError) return reply.code(err.status).send({ error: err.message, ...(err.body ?? {}) });
-    if (err.validation || err.statusCode === 400) return reply.code(400).send({ error: err.message });
+    if (err.validation) return reply.code(400).send({ error: err.message });
+    if (typeof err.statusCode === "number" && err.statusCode >= 400 && err.statusCode < 500) return reply.code(err.statusCode).send({ error: err.message });
     app.log.error(err);
     return reply.code(500).send({ error: "internal error" });
   });

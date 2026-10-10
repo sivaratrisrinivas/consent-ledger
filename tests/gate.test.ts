@@ -74,3 +74,10 @@ describe("first-charge gate", () => {
     expect(m.json().data.attemptFirstCharge).toEqual({ httpStatus: 409, missing: ["P3"] });
   });
 });
+
+describe("errors", () => {
+  it("client errors keep their status (e.g. 415), not 500", async () => {
+    const r = await ctx.app.inject({ method: "POST", url: "/demo/reset", payload: "x=1", headers: { ...H, "content-type": "application/x-www-form-urlencoded" } });
+    expect(r.statusCode).toBe(415);
+  });
+});
