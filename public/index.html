@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Consent Ledger: first-charge hold for phone signups</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <div class="brand"><b>Consent Ledger</b><span>Holds the first charge on a phone signup until every disclosure required by the GoGoGrandparent Terms (effective Sep 21, 2026) is found in the call.</span></div>
+  <nav>
+    <button id="btn-checklist" class="ghost">Checklist</button>
+    <a class="ghost" href="/demo.mp4" target="_blank">Video</a>
+    <a class="ghost" href="https://github.com/sivaratrisrinivas/consent-ledger" target="_blank">Code</a>
+  </nav>
+</header>
+<main>
+  <aside id="calls"><h3>Synthetic calls</h3><ul id="call-list"></ul>
+    <p class="fine">All six calls are invented. Prices are synthetic. Not affiliated with GoGoGrandparent. Not legal advice.</p>
+  </aside>
+  <section id="transcript-col"><h3 id="call-title">Transcript</h3><div id="meta"></div><div id="transcript"></div></section>
+  <section id="ledger-col">
+    <h3>Ledger <span id="det" class="fine"></span></h3>
+    <div id="family"></div>
+    <div id="actions">
+      <button id="btn-charge">Attempt first charge</button>
+      <button id="btn-evidence" class="ghost">Evidence pack</button>
+      <form id="override-form">
+        <input id="sup" placeholder="supervisor id" value="">
+        <input id="reason" placeholder="reason for override" value="">
+        <button type="submit" class="warn">Supervisor override</button>
+      </form>
+    </div>
+    <div id="result"></div>
+    <div id="ledger"></div>
+    <div id="audit"></div>
+  </section>
+</main>
+<div id="modal" hidden><div class="box"><button class="close" id="modal-close">Close</button><div id="modal-body"></div></div></div>
+<div id="caption" hidden></div>
+<script src="/app.js"></script>
+</body>
+</html>

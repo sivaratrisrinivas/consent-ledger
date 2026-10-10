@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: consent-ledger
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: DETECTOR
+        value: cached
+      # Optional: DATABASE_URL=mysql://... to use MySQL. Without it the app uses embedded SQLite and reseeds the six demo calls on boot.
