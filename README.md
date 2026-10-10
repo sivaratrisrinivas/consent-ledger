@@ -2,14 +2,14 @@
 
 Holds the first charge on a phone signup until every disclosure that the GoGoGrandparent Terms of Service (effective Sep 21, 2026) require is found in the call transcript, each with a word-for-word quote and timestamp. Supervisor override and audit log included. Node.js, TypeScript, MySQL, REST and GraphQL.
 
-**Live demo:** https://consent-ledger-75gt.onrender.com (free tier, first load can take about a minute) · **Video (70 s):** [demo.mp4](https://consent-ledger-75gt.onrender.com/demo.mp4) ([repo copy](public/demo.mp4))
+**Live demo:** https://consent-ledger-75gt.onrender.com (free tier, first load can take about a minute) · **Video (63 s, silent):** [demo.mp4](https://consent-ledger-75gt.onrender.com/demo.mp4) ([repo copy](public/demo.mp4))
 
 ## Run it (about 2 minutes, no keys, no database server)
 
 ```bash
 npm ci && npm run demo      # six calls, ledgers, gate results, one override, audit log
 npm run dev                 # web page and API on http://localhost:3000
-npm test                    # 19 tests; MYSQL_TEST=1 npm test adds a run against real MySQL
+npm test                    # 20 tests; MYSQL_TEST=1 npm test adds a run against real MySQL
 ```
 
 ## Checklist (from the public Terms, [gogograndparent.com/terms](https://www.gogograndparent.com/terms), checked Oct 10, 2026)
